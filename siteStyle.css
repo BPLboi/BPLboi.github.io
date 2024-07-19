@@ -1,0 +1,155 @@
+/* CSS notes:
+
+Some common attributes:
+font-family: (by specifying multiple items, you can create fallback fonts if a
+    particular font cannot be loaded)
+font-size:
+font-weight: (normal/bold; or a number from 100 to 900)
+font-style: (italic, normal)
+
+word-spacing: - sets the space between words. Default is 0.25em
+letter-spacing: default value is 0px
+line-height: (a number as a ratio of the line size) (basically line spacing)
+text-transform: (uppercase/lowercase)
+
+
+
+text-align: left/center/right
+
+
+
+color: (is the color of the text)
+background-color: (the color behind the text)
+opacity:
+
+  margin-top: 
+  margin-bottom: 
+  margin-right: 
+  margin-left: 
+  (note: all of these can use a pixel value or auto)
+
+height:
+width:
+border: thickness, type (solid,dotted, ect.), color
+border-radius: (rounds out edges of borders; you can controll it by pixels or as a percent)
+padding: (top right bottom left OR top&bottom left&right OR top&bottom&left&right)
+overflow: hidden/scroll/visible
+visibility: (hidden/visible) --> hides/shows text
+
+box-sizing: (default: contant box; border-box)
+
+position: (static, relative, absolute, fixed)
+    if relative/absolute: top, bottom, left, right represent distances from those places
+
+z-index: - basically says in what order elements should appear on the page if overlap happens
+
+display: (inline, block, inline-block), (grid, inline-grid)
+float: (left, right)
+
+clear (left, right, both, none) - specifies whether a particular side of the element will touch another
+    similar element
+
+grid-template-columns - number of columns in a grid
+grid-template-rows
+grid-template (compination of previous two; rows/columns) - can use repeat(number, width)
+    to have multiple of something, minmax(minimum, maximum) - sets minimum and maximum size of a column/row
+
+grid-row-gap - gap between rows of a grid
+grid-column-gap - gap between columns
+grid-gap - rows, columns
+
+grid-row-start: starting grid line of an element
+grid-row end:   ending grid line of an element
+grid row: start/end;
+(same for columns) (can use keyword span to make an element take up 2 rows starting from a given point )
+
+
+grid-area: (row start, col start ,row end, col end)
+
+
+grid-template-areas: specify a grid with ceratin elements in certain places based on keywords
+grid-area: specify keyword for a specific area
+grid-template-columns: specify the width of columns in the grid
+(same for rows)
+*/
+
+body{
+    margin: 0 0;
+}
+
+#main{
+    background-color: rgb(255, 250, 229);
+    font-family: Calibri;
+    margin:0px auto 50px auto;
+    width: 800px;
+    padding: 20px;
+
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 50px;
+}
+
+h1{
+    font-family: Brush Script MT;
+    font-size: 50px;
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    font-family: cursive;
+    text-align: center;
+    color: rgb(102, 204, 0);
+}
+
+figure figcaption{
+    font-size: 12px;
+}
+
+.topLinks{
+    font-size: 15px;
+    text-decoration: none;
+    color: purple;
+
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 140px;
+    height: 50px;
+    vertical-align: top;
+    background-color: rgb(204, 255, 100);
+
+    padding: 10px;
+    border: 1px solid rgb(122,122,122);
+    border-radius: 20px;
+
+    margin: 0px auto;
+}
+
+#topBar{
+    text-align: center;
+    background-color: yellowgreen;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 5px;
+    vertical-align: top;
+}
+
+.firstHalf{
+    width: 370px;
+    margin: 20px 10px 20px 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.secondHalf{
+    display: inline-block;
+
+    width: 370px;
+    margin: 20px 0px 20px 10px;
+    padding: 0px;
+    vertical-align: top;
+}
