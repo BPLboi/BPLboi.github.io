@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script src="jquery.js"></script> 
+        <script> 
+        // $(function(){
+          $("#includedContent").load("./a.html"); 
+        // });
+        </script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </head>
     <body>
         <link href="siteStyle.css" type="text/css" rel="stylesheet">
-            
+
+        <div id="includedContent"></div>
+        <!--
         <section id = "topBar">
             <a class = "topLinks" href = "./index.html">Home</a>
             <a class = "topLinks" href = "./gradeByGradeSchool.html">Grade by Grade: School</a>
@@ -11,7 +22,7 @@
             <a class = "topLinks" href = "./resume.html">Résumé</a>
             <a class = "topLinks" href = "./login.html">Login</a>
         </section>
-
+        -->
         <section id = "main">
             <header>
                 <h1>The Life and Times of Boyan Litchev</h1>
