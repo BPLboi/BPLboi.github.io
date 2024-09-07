@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <!-- <script src="jquery.js"></script>  -->
+    <script> 
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
+
+
 <!-- <!DOCTYPE html>
 <html>
 <script>
@@ -27,8 +44,9 @@ includeHTML();
 </body>
 </html> -->
 
-
-<!DOCTYPE html>
+<!-- NOTE: Including other files seems to work once uploaded to github, but doesn't work on my local computer?
+ This is kind of annoying for testing; not sure why it happens   -->
+<!-- <!DOCTYPE html>
 <html>
 <script>
 function includeHTML() {
@@ -70,7 +88,7 @@ includeHTML();
 </script>
 
 </body>
-</html>
+</html> -->
 
 
 <!-- <!doctype html>
