@@ -101,38 +101,6 @@ figure figcaption{
     font-size: 12px;
 }
 
-.topLinks{
-    font-size: 15px;
-    text-decoration: none;
-    color: purple;
-
-    box-sizing: border-box;
-    display: inline-block;
-    max-width: 140px;
-    height: 50px;
-    vertical-align: top;
-    background-color: rgb(204, 255, 100);
-
-    padding: 10px;
-    border: 1px solid rgb(122,122,122);
-    border-radius: 20px;
-
-    margin: 0px auto;
-}
-
-#topBar{
-    text-align: center;
-    background-color: yellowgreen;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-
-    box-sizing: border-box;
-
-    padding: 5px;
-    vertical-align: top;
-}
-
 .firstHalf{
     width: 370px;
     margin: 20px 10px 20px 0px;
