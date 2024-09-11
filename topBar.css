@@ -13,7 +13,7 @@
 }
 
 /* Styling of the non-dropdown buttons */
-.topBar a {
+#topBar a {
     font-size: 15px;
     text-decoration: none;
     color: white;
