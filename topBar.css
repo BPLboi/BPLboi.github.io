@@ -80,7 +80,7 @@
 }
 
 
-.topDropdown:hover .dropContent {display: block;}
+.topDropdown:hover .dropContent {display: inline-block;}
 
 .topDropdown:hover .dropButton {background-color: rgb(79, 113, 245);} 
 
