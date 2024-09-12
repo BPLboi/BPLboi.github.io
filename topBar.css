@@ -30,7 +30,7 @@
 
 /* Styling of the dropdown buttons */
 .dropButton {
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
     color: white;
 
@@ -83,7 +83,8 @@
 .topDropdown:hover .dropButton {background-color: rgb(79, 113, 245);} 
 
 /* Box around each link changes upon hover */
-#topbar:hover a {background-color: rgb(202, 43, 11);}
+#topbar a:hover {background-color: rgb(202, 43, 11);}
+.topDropdown a:hover{background-color: rgb(202, 43, 11);}
 
 
 /* Dropdown Button */
