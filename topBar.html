@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+<script>
+    function modifyPath() {
+      var z, i, elmnt, currPath;
+      var pathAdd = pathAdd || {};
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain attribute:*/
+        currPath = elmnt.getAttribute("href");
+        if (currPath) {
+            // If the element has a path attribute, modify it
+            elmnt.setAttribute("href",pathAdd + currPath);
+        }
+      }
+    };
+</script>
 <html>
     <link href="topBar.css" type="text/css" rel="stylesheet">
 
@@ -53,3 +70,6 @@
         <a href = "#">Photos</a>
     </section>
 </html>
+<script>
+    modifyPath();
+</script>
