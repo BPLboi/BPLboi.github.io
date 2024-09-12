@@ -14,7 +14,7 @@
 
 /* Styling of the non-dropdown buttons */
 #topBar a {
-    font-size: 30px;
+    font-size: 24px;
     text-decoration: none;
     color: white;
 
@@ -30,7 +30,7 @@
 
 /* Styling of the dropdown buttons */
 .dropButton {
-    font-size: 15px;
+    font-size: 24px;
     text-decoration: none;
     color: white;
 
@@ -41,6 +41,7 @@
     height: 50px;
     vertical-align: top;
 
+    border: 0px;
     padding: 0px;
     background-color: rgb(38, 146, 234);
     margin: 0px auto;
@@ -73,6 +74,7 @@
 }
 
 /* Links inside the dropdown */
+/* This overrides  */
 .dropdownContent a {
     color: white;
     /* padding: 12px 16px; */
