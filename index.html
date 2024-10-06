@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        function includeHTML() {
-          var z, i, elmnt, file, xhttp;
-          /*loop through a collection of all HTML elements:*/
-          z = document.getElementsByTagName("*");
-          for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain attribute:*/
-            file = elmnt.getAttribute("html-include");
-            if (file) {
-              /*make an HTTP request using the attribute value as the file name:*/
-              xhttp = new XMLHttpRequest();
-              xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                  /*remove the attribute, and call this function once more:*/
-                  elmnt.removeAttribute("html-include");
-                  includeHTML();
-                }
-              }      
-              xhttp.open("GET", file, true);
-              xhttp.send();
-              /*exit the function:*/
-              return;
-            }
-          }
-        };
-    </script>
     <body>
-        <link href="siteStyle.css" type="text/css" rel="stylesheet">
+        <link href="./siteStyle.css" type="text/css" rel="stylesheet">
 
-        <div html-include="./topBar.html"></div>
-        <!--
+        <link href="/topBar.css" type="text/css" rel="stylesheet">
+
         <section id = "topBar">
-            <a class = "topLinks" href = "./index.html">Home</a>
-            <a class = "topLinks" href = "./gradeByGradeSchool.html">Grade by Grade: School</a>
-            <a class = "topLinks" href = "./gradeByGradeSummer.html">Grade by Grade: Summer</a>
-            <a class = "topLinks" href = "./majorActivities.html">Major Activities</a>
-            <a class = "topLinks" href = "./resume.html">Résumé</a>
-            <a class = "topLinks" href = "./login.html">Login</a>
+            <a href = "/index.html">Home</a>
+            <div class="topDropdown">
+                <button class="dropButton">Projects</button>
+                <div class="dropContent">
+                    <a href="#">SigmaCamp Stickers</a>
+                    <a href="#">Private Information Retrieval</a>
+                    <a href="#">Anonymous Messaging</a>
+                    <a href="#">Fake Photoshop</a>
+                    <a href="#">The Stable Matching Problem</a>
+                    <a href="#">Penney's Game</a>
+                    <a href="#">Markov Chain Simulator</a>
+                    <a href="#">Battery Buggy</a>
+                    <a href="/Projects/firefighter.html">Firefighter Robot</a>
+                </div>
+            </div>
+            <div class="topDropdown">
+                <button class="dropButton">Résumé</button>
+                <div class="dropContent">
+                    <a href="#">Interactive</a>
+                    <a href="/Resume/resume-2024.html">2024</a>
+                </div>
+            </div>
+            <div class="topDropdown">
+                <button class="dropButton">Activities</button>
+                <div class = "dropContent">
+                    <h4 class = "dropHeader">Chronological</h4>
+                    <a class = "topLinks" href = "#">College</a>
+                    <a class = "topLinks" href = "#">High School</a>
+                    <a class = "topLinks" href = "/Activities/Chronological/gradeByGradeMiddleSchool.html">Middle School</a>
+                <div class="dropContent">
+                    <h4 class = "dropHeader">Individual Activities</h4>
+                    <a href="#">SigmaCamp</a>
+                    <a href="#">Math Team</a>
+                    <a href="#">MIT PRIMES</a>
+                    <a href="#">MathILy</a>
+                    <a href="#">KTBYTE Robotics</a>
+                    <a href="#">LexHacks</a>
+                    <a href="#">MIT PRIMES STEP</a>
+                    <a href="#">MathCounts</a>
+                    <a href="#">Science Olympiad</a>
+                </div>
+            </div> 
+
+            <!-- TODO: change the hyperlink and make a proper photos page -->
+            <a href = "#">Photos</a>
         </section>
-        -->
+
+
         <section id = "main">
             <header>
                 <h1>The Life and Times of Boyan Litchev</h1>
@@ -69,7 +80,4 @@
             </section>
         </section>
     </body>
-    <script>
-      includeHTML();
-  </script>
 </html>
