@@ -1,82 +1,152 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <link href="./siteStyle.css" type="text/css" rel="stylesheet">
+        <link href="./site-style.css" type="text/css" rel="stylesheet">
 
-        <link href="/topBar.css" type="text/css" rel="stylesheet">
+<link href="./top-bar.css" type="text/css" rel="stylesheet">
 
-        <section id = "topBar">
-            <a href = "/index.html">Home</a>
-            <div class="topDropdown">
-                <button class="dropButton">Projects</button>
-                <div class="dropContent">
+<section class="top-menu-bar-container">
+    <ul class="top-menu-bar">
+        <li class="top-menu-dropdown">
+            <a href="./index.html">Home</a>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Projects</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href="#">U of T Web Scraper</a>
+                </li>
+                <li>
                     <a href="#">SigmaCamp Stickers</a>
+                </li>
+                <li>
                     <a href="#">Private Information Retrieval</a>
+                </li>
+                <li>
                     <a href="#">Anonymous Messaging</a>
+                </li>
+                <li>
                     <a href="#">Fake Photoshop</a>
+                </li>
+                <li>
                     <a href="#">The Stable Matching Problem</a>
+                </li>
+                <li>
                     <a href="#">Penney's Game</a>
+                </li>
+                <li>
                     <a href="#">Markov Chain Simulator</a>
+                </li>
+                <li>
                     <a href="#">Battery Buggy</a>
-                    <a href="/Projects/firefighter.html">Firefighter Robot</a>
-                </div>
-            </div>
-            <div class="topDropdown">
-                <button class="dropButton">Résumé</button>
-                <div class="dropContent">
-                    <a href="#">Interactive</a>
-                    <a href="/Resume/resume-2024.html">2024</a>
-                </div>
-            </div>
-            <div class="topDropdown">
-                <button class="dropButton">Activities</button>
-                <div class = "dropContent">
-                    <h4 class = "dropHeader">Chronological</h4>
-                    <a class = "topLinks" href = "#">College</a>
-                    <a class = "topLinks" href = "#">High School</a>
-                    <a class = "topLinks" href = "/Activities/Chronological/gradeByGradeMiddleSchool.html">Middle School</a>
-                <div class="dropContent">
-                    <h4 class = "dropHeader">Individual Activities</h4>
-                    <a href="#">SigmaCamp</a>
-                    <a href="#">Math Team</a>
-                    <a href="#">MIT PRIMES</a>
-                    <a href="#">MathILy</a>
-                    <a href="#">KTBYTE Robotics</a>
-                    <a href="#">LexHacks</a>
-                    <a href="#">MIT PRIMES STEP</a>
-                    <a href="#">MathCounts</a>
-                    <a href="#">Science Olympiad</a>
-                </div>
-            </div> 
-
+                </li>
+                <li>
+                    <a href="./Projects/firefighter.html">Firefighter Robot</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Résumé</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href="./Resume/resume-interactive.html">Interactive</a>
+                </li>
+                <li>
+                    <a href="./Resume/resume-2024.html">2024</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Activities</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a>Chronological</a>
+                    <ul class="top-menu-dropdown-content">
+                        <li>
+                            <a class="topLinks" href="#">College</a>
+                        </li>
+                        <li>
+                            <a class="topLinks" href="./Activities/Chronological/high-school.html">High
+                                School</a>
+                        </li>
+                        <li>
+                            <a class="topLinks" href="./Activities/Chronological/middle-school.html">Middle
+                                School</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Individual Activities</a>
+                    <ul class="top-menu-dropdown-content">
+                        <li>
+                            <a href="#">SigmaCamp</a>
+                        </li>
+                        <li>
+                            <a href="#">Math Team</a>
+                        </li>
+                        <li>
+                            <a href="#">MIT PRIMES</a>
+                        </li>
+                        <li>
+                            <a href="#">MathILy</a>
+                        </li>
+                        <li>
+                            <a href="#">KTBYTE Robotics</a>
+                        </li>
+                        <li>
+                            <a href="#">LexHacks</a>
+                        </li>
+                        <li>
+                            <a href="#">MIT PRIMES STEP</a>
+                        </li>
+                        <li>
+                            <a href="#">MathCounts</a>
+                        </li>
+                        <li>
+                            <a href="#">Science Olympiad</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Education</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href="#">University of Toronto</a>
+                </li>
+                <li>
+                    <a href="#">Lexington High School</a>
+                </li>
+                <li>
+                    <a href="#">William Diamond Middle School</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
             <!-- TODO: change the hyperlink and make a proper photos page -->
-            <a href = "#">Photos</a>
-        </section>
+            <a href="#">Photos</a>
+        </li>
+    </ul>
+</section>
 
 
         <section id = "main">
-            <header>
-                <h1>The Life and Times of Boyan Litchev</h1>
-            </header>
+            <section id = "box-split-container">
+                <section class="left-half">
+                    <h2>Howdy!</h2>
+                    <p>Welcome to my website! I'm Boyan Litchev, and 
+                        as of October 2024, I'm a freshman at the University of Toronto.
+                        <br><br>
+                        My favorite academic things to do include math, computer science, and robotics, and I am currently
+                        studying the first two. In my free time, I fool around, read, and play video games.
+                    </p>
+                </section>
 
-            <section>
-                <h2>Welcome!</h2>
-                <p class = "firstHalf">Welcome to "The Life and Times of Boyan Litchev"! My name is Boyan Litchev, and 
-                    currently I'm in 9th grade at Lexington High School.<br><br> In general, some of my 
-                    favorite activities are doing math, computer science, and robotics. I also love 
-                    building and designing projects, such as miniature vehichles. Additionally, in my free 
-                    time I enjoy running and playing video games. <br><br> The purpose of this website 
-                    is to outline and compile many of the things that I have done over the years. More 
-                    specifically, the "Grade by Grade: School" page outlines the things that I have done 
-                    each school year. Similarly, the "Grade by Grade: Summer" page goes 
-                    through the things that I have done during the summer each year, such as summer camps
-                    and projects. Finally, the "Résumé" page is a collection of the most recent things
-                    that I have done. <br><br> <strong>I hope you enjoy my website!</strong> <br>
-                    <em>Boyan Litchev<em>
-                </p>
-
-                <img src = "./Pictures/BoyanPhoto.jpg" alt = "The image couldn't load"
-                    height = "525" class = "secondHalf">
+                <figure class="right-half img-container">
+                    <img src = "./Pictures/11th Grade Halloween.webp" alt = "Image unable to load">
+                        <figcaption>Myself, circa 2022. Photo by Vikram Anantha, an absolute GOAT.</figcaption>
+                </figure>
             </section>
         </section>
     </body>

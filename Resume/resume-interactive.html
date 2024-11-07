@@ -1,37 +1,151 @@
-<!-- an interesting bit of code -->
- <!-- Roll your own solution, much like someone does when he/she created a library like the
-   one mentioned above. Design some abstraction for your shapes (in this instance some kind of a Bar object)
-    that encompasses the relevant features (notably the x,y,w,h) and on canvas mousemove-event,
-     bruteforce through all your bars and calculate whether or not the event mouse position is
-      within a bar or not. Then act accordingly, e.g. redraw the bar in new color. Of course you'll
-       have to handle mouseout as well (to color it back and the like). -->
 <!doctype html>
 <html>
-    <head>
-        <script type="text/javascript">
-            window.onload=function(){
-                var canvas=document.getElementById('mycanvas');
-                var ctx=canvas.getContext('2d');
-                var value=[180,140,30,340,50,90];
-                var width=50;
-                var currx=30;
-                ctx.fillStyle="red";
-                var i = 0;
-                var interval = setInterval(function(){
-                    if (i == value.length){
-                        clearInterval(interval);
-                        return;
-                    }
-                    var h=value[i];
-                    ctx.fillRect(currx,canvas.height-h,width,h);
-                    currx+=width+10;
-                    i++;
-                }, 0);console.log(interval);
-                // number on this last line seems to control how long it takes for the figure to load?
-            };
-        </script>
-    </head>
-    <body>
-        <canvas id="mycanvas" height="400" width="400" style="border:1px solid #c3c3c3;">
-    </body>
+
+<head>
+    <link href=".././site-style.css" type="text/css" rel="stylesheet">
+    <script src="./resume-interactive.js"></script>
+</head>
+
+<body>
+    <link href=".././site-style.css" type="text/css" rel="stylesheet">
+
+    <link href=".././top-bar.css" type="text/css" rel="stylesheet">
+
+<section class="top-menu-bar-container">
+    <ul class="top-menu-bar">
+        <li class="top-menu-dropdown">
+            <a href=".././index.html">Home</a>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Projects</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href="#">U of T Web Scraper</a>
+                </li>
+                <li>
+                    <a href="#">SigmaCamp Stickers</a>
+                </li>
+                <li>
+                    <a href="#">Private Information Retrieval</a>
+                </li>
+                <li>
+                    <a href="#">Anonymous Messaging</a>
+                </li>
+                <li>
+                    <a href="#">Fake Photoshop</a>
+                </li>
+                <li>
+                    <a href="#">The Stable Matching Problem</a>
+                </li>
+                <li>
+                    <a href="#">Penney's Game</a>
+                </li>
+                <li>
+                    <a href="#">Markov Chain Simulator</a>
+                </li>
+                <li>
+                    <a href="#">Battery Buggy</a>
+                </li>
+                <li>
+                    <a href=".././Projects/firefighter.html">Firefighter Robot</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Résumé</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href=".././Resume/resume-interactive.html">Interactive</a>
+                </li>
+                <li>
+                    <a href=".././Resume/resume-2024.html">2024</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Activities</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a>Chronological</a>
+                    <ul class="top-menu-dropdown-content">
+                        <li>
+                            <a class="topLinks" href="#">College</a>
+                        </li>
+                        <li>
+                            <a class="topLinks" href=".././Activities/Chronological/high-school.html">High
+                                School</a>
+                        </li>
+                        <li>
+                            <a class="topLinks" href=".././Activities/Chronological/middle-school.html">Middle
+                                School</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Individual Activities</a>
+                    <ul class="top-menu-dropdown-content">
+                        <li>
+                            <a href="#">SigmaCamp</a>
+                        </li>
+                        <li>
+                            <a href="#">Math Team</a>
+                        </li>
+                        <li>
+                            <a href="#">MIT PRIMES</a>
+                        </li>
+                        <li>
+                            <a href="#">MathILy</a>
+                        </li>
+                        <li>
+                            <a href="#">KTBYTE Robotics</a>
+                        </li>
+                        <li>
+                            <a href="#">LexHacks</a>
+                        </li>
+                        <li>
+                            <a href="#">MIT PRIMES STEP</a>
+                        </li>
+                        <li>
+                            <a href="#">MathCounts</a>
+                        </li>
+                        <li>
+                            <a href="#">Science Olympiad</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <a href="#">Education</a>
+            <ul class="top-menu-dropdown-content">
+                <li>
+                    <a href="#">University of Toronto</a>
+                </li>
+                <li>
+                    <a href="#">Lexington High School</a>
+                </li>
+                <li>
+                    <a href="#">William Diamond Middle School</a>
+                </li>
+            </ul>
+        </li>
+        <li class="top-menu-dropdown">
+            <!-- TODO: change the hyperlink and make a proper photos page -->
+            <a href="#">Photos</a>
+        </li>
+    </ul>
+</section>
+
+    <section id="main">
+        <canvas id="testing-canvas" height="400" width="400" style="border:1px solid #c3c3c3;"></canvas>
+        <h1 id="testing-field">hello there yall!</h1>
+        <button id="test-button" type="button" onclick="changeText()"> cool button</button>
+    </section>
+
+    <script>
+        loadCanvas();
+    </script>
+
+</body>
+
 </html>

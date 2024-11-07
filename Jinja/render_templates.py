@@ -15,7 +15,7 @@ environment = Environment(loader=FileSystemLoader("./Jinja"))
 render_files = {}
 for (dir_path, dir_names, file_names) in os.walk("./Jinja"):
     for file in file_names:
-        if file.endswith(('.html','.css')):
+        if file.endswith(('.html','.css','.js')):
             filepath = (dir_path + "/" + file).replace('./Jinja', '.')
             render_files[filepath] = "../"*(filepath.count('/')-1)
     #Makes the corresponding directory inside of the main folder
@@ -28,11 +28,6 @@ for (dir_path, dir_names, file_names) in os.walk("./Jinja"):
 for file in render_files:
     template = environment.get_template(file)
     content = template.render(pathAdd=render_files[file])
-
-    if file == "./topBar.html":
-        print(template.filename)
-        print(open(template.filename).read())
-        # print(content)
 
     with open(file, mode="w", encoding="utf-8") as message:
         message.write(content)

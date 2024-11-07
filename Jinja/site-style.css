@@ -69,52 +69,91 @@ grid-template-columns: specify the width of columns in the grid
 (same for rows)
 */
 
-body{
+body {
     margin: 0 0;
     background-color: rgb(255, 250, 229);
 }
 
-#main{
-    font-family: Calibri;
-    margin: 0px auto 0px auto;
-    /* padding:50px 0px 50px 0px; */
-    padding: min(100px, 10%) min(45px, 4.5%) min(100px, 10%) min(45px, 4.5%); 
+#main {
+    display: flex;
+
     width: min(1000px, 100%);
     min-height: 100vh;
 
+    margin: 0px auto 0px auto;
+    padding: min(60px, 6%) 0 min(60px, 6%) 0;
     border: 1px solid rgb(122, 122, 122);
+
+    font-family: Calibri;
+    text-align: center;
 }
 
-h1{
-    font-family: Calibri;
+h1 {
     font-size: 50px;
     text-align: center;
-    color: blue;
+    color: hsl(207, 100%, 50%);
 }
 
-h2{
-    font-family: Calibri;
+h2 {
     font-size: 30px;
     text-align: center;
-    color: #0073cf;
+    color: hsl(207, 100%, 60%);
 }
 
-figure figcaption{
+figure figcaption {
     font-size: 12px;
 }
 
-.img-container{
-    text-align:center;
+.img-container {
+    text-align: center;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.left-half, .right-half{
-    width: min(400px, 40%);
-    /* margin: 30px 40px 30px 40px; */
-    /* margin: 30px; */
+.left-half,
+.right-half {
+    text-align: left;
+    margin: 0;
     display: inline-block;
+    width: 40%;
+    padding: 3% 4% 3% 4%;
     vertical-align: top;
+}
+
+.side-nav {
+    height: 100vh;
+
+    margin-top: 50px;
+    text-align: left;
+    padding: 3% 4% 3% 4%;
+
+    position: sticky;
+    top: 0;
+}
+
+.side-nav h2 {
+    text-align: left;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+.side-nav>ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-nav a {
+    text-decoration: none;
+}
+
+.side-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 3% 4% 3% 4%;
+    padding: 20px;
+    text-align: left;
 }
