@@ -100,6 +100,13 @@ h2 {
     color: hsl(207, 100%, 60%);
 }
 
+figure {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 figure figcaption {
     font-size: 12px;
 }
@@ -123,7 +130,7 @@ img {
 }
 
 .side-nav {
-    height: 100vh;
+    height: 80vh;
 
     margin-top: 50px;
     text-align: left;

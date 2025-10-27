@@ -20,12 +20,17 @@
 
 .top-menu-bar>li {
   display: inline-block;
-  position: initial;
+  height: 100%;
 }
 
 .top-menu-bar>li>a {
-  padding: 10px 18px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  padding: 0 18px;
+
   color: white;
   background-color: hsl(220, 96%, 69%);
   font-size: 20px;
@@ -71,5 +76,4 @@
 .top-menu-bar>li>ul>li:has(ul)>a {
   font-weight: bold;
   font-size: 20px;
-  /* background-color:  */
 }

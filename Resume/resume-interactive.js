@@ -75,16 +75,16 @@ class BarGraph {
         // this.numericalX = numericalX;
         // this.numericalY = numericalY;
 
-        this.horizontalTicks = ;
-        this.verticalTicks = ;
+        // this.horizontalTicks = ;
+        // this.verticalTicks = ;
         this.barList = generateBars();
 
     }
 
-    setAxisList(distance, list) {
-        this.axis = {};
-        for 
-    }
+    // setAxisList(distance, list) {
+    //     this.axis = {};
+    //     for 
+    // }
 
     // generateNumericalAxis(distance, maximum, minumum) {
     //     //returns a list of between 5 and 10 ticks
@@ -149,7 +149,7 @@ function loadCanvas() {
 
     const testBar = new Bar("hsl(240 50% 80%)", 100, 200, 100, 150, "Cool Title", "Cool Message");
     testBar.drawBar(ctx);
-    // testBar.clickBar(ctx, element, element);
+    testBar.clickBar(ctx, element, element);
 
     canvas.addEventListener('click', function (event) {
         var x = event.pageX - canvasLeft;

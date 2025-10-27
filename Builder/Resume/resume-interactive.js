@@ -75,16 +75,16 @@ class BarGraph {
         // this.numericalX = numericalX;
         // this.numericalY = numericalY;
 
-        this.horizontalTicks = ;
-        this.verticalTicks = ;
+        // this.horizontalTicks = ;
+        // this.verticalTicks = ;
         this.barList = generateBars();
 
     }
 
-    setAxisList(distance, list) {
-        this.axis = {};
-        for 
-    }
+    // setAxisList(distance, list) {
+    //     this.axis = {};
+    //     for 
+    // }
 
     // generateNumericalAxis(distance, maximum, minumum) {
     //     //returns a list of between 5 and 10 ticks
